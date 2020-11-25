@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('activationCode')->nullable();
             $table->string('socialType')->nullable();
             $table->timestamps();
+            $table->rememberToken();
         });
     }
 
